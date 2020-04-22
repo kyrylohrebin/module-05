@@ -17,15 +17,15 @@
 
 .menu {
     height: 100px;
-    padding-top: 34px;
-    padding-bottom: 34px;
+    padding-top: 28px;
+    padding-bottom: 26px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .menu-list {
     margin: 0;
-    padding-top: 3px;
+    padding-top: 10px;
     float: right;
     padding-left: 0;
 }
@@ -86,7 +86,8 @@
 .slider {
     position: relative;
     box-sizing: inherit;
-}
+    }
+
 
 .slider-img {
     width: 100%;
