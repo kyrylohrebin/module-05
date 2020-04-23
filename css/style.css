@@ -162,6 +162,7 @@ html {
   background-image: url(../img/prev.png);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .slider-ctrl-next {
@@ -177,6 +178,7 @@ html {
   background-image: url(../img/next.png);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .slider-ctrl-next:hover {
@@ -225,19 +227,16 @@ html {
   padding: 0;
 }
 
-.prod-wrapper {
-    width: 255px;
-    height: 284px;
-  }
+.prod-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 .products-list-item {
   width: 255px;
   float: left;
   position: relative;
-}
-
-.products-list-item:nth-child(-n + 4) {
-  margin-bottom: 30px;
 }
 
 .products-list-item:hover .prod-name {
@@ -275,20 +274,20 @@ html {
 }
 
 .overlay {
+    box-sizing: border-box;
     width: 255px;
     height: 284px;
     border-width: 10px;
     position: absolute;
     top: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    background-clip: padding-box;
+    display:none
 }
 
-.icon-list:hover .overlay {
-    display: block;
-  }
-
-.overlay:hover {
-    background-color: rgba(0, 0, 0, 0.54);
+.products-list-item:hover .overlay{
     display: block;
 }
 
@@ -310,11 +309,15 @@ html {
     height: 50px;
     border: 1px solid #ffffff;
     background-color: transparent;
-    float: left;
     cursor: pointer;
   }
 
+.button:hover {
+    background-color: rgb(26, 188, 156);
+}
+
 .icon-cart{
+    display: block;
     width: 166px;
     height: 50px;
     color: #ffffff;
@@ -332,6 +335,13 @@ html {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icon-cart:hover {
+    background-color: rgb(50, 50, 50);
 }
 
 .icon-heart {
@@ -361,3 +371,22 @@ html {
     top: 0;
     right: 0;
 }
+
+.footer {
+    font-family: "OpenSans", sans-serif;
+    line-height: 1.75;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(254, 254, 254);
+    margin: 0 auto;
+    box-sizing: inherit;
+    text-emphasis: center;
+    background-color: #323232;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.footer a {
+    color: #46bfa9;
+    text-decoration: none;
+  }
