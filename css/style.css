@@ -94,14 +94,48 @@ html {
 .slider {
   position: relative;
   box-sizing: inherit;
-  background-color: lightcoral;
+  margin-bottom: 96px;
 }
 
 .slider-img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
+  filter: brightness(52%);
+}
+
+.slider-heading {
+    font-size: 60px;
+    font-family: "Roboto";
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.367;
+    text-align: left;
+    position: absolute;
+    z-index: 3;
+    top:50%;
+    left:20%;
+    transform: translateY(-90%);
+}
+
+.colored-slider-heading:hover {
+    color: rgb(255, 114, 0);
+}
+
+.slider-heading-text {
+    font-size: 24px;
+    font-family: "Roboto";
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.367;
+    text-align: left;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 20%;
+    transform: translateY(50%);
 }
 
 .slider-cont {
