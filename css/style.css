@@ -117,6 +117,7 @@ html {
     top:50%;
     left:20%;
     transform: translateY(-90%);
+    margin: 0;
 }
 
 .colored-slider-heading:hover {
@@ -194,7 +195,7 @@ html {
   box-sizing: border-box;
 }
 
-h2 {
+.collection-heading {
   font-size: 48px;
   font-family: "Roboto";
   color: rgb(81, 81, 81);
@@ -203,7 +204,7 @@ h2 {
   text-align: center;
   margin: 0 auto;
 }
-.features-heading::after {
+.collection-heading::after {
   display: block;
   width: 162px;
   height: 8px;
@@ -224,9 +225,15 @@ h2 {
   padding: 0;
 }
 
+.prod-wrapper {
+    width: 255px;
+    height: 284px;
+  }
+
 .products-list-item {
   width: 255px;
   float: left;
+  position: relative;
 }
 
 .products-list-item:nth-child(-n + 4) {
@@ -267,7 +274,90 @@ h2 {
   margin-right: 30px;
 }
 
-.prod-wrapper {
-  background-color: #e9f0fd;
-  background-size: cover;
+.overlay {
+    width: 255px;
+    height: 284px;
+    border-width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-list:hover .overlay {
+    display: block;
+  }
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.54);
+    display: block;
+}
+
+.icons-block {
+   display: block;
+   width: 166px;
+   height: 106px;
+   list-style: none;
+   padding: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.button {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    float: left;
+    cursor: pointer;
+  }
+
+.icon-cart{
+    width: 166px;
+    height: 50px;
+    color: #ffffff;
+    padding: 0px 0px 0px 40px;
+    background-image: url(../img/cart.png);
+    background-repeat: no-repeat;
+    background-position: left 12px center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.286;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-heart {
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon-arrows {
+    background-image: url(../img/arrows.png.);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-clock {
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
